@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Home</title>
-  <link rel="stylesheet" href="style.css">
+     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
   <header>
