@@ -23,7 +23,12 @@
 
                   <x-nav-link :href="route('contact')" :active="request()->routeIs('contact')">
                         {{ __('Contact') }}
-                    </x-nav-link>     
+                    </x-nav-link>   
+                
+                  
+                  <x-nav-link :href="route('help')" :active="request()->routeIs('help')">
+                        {{ __('Help me') }}
+                    </x-nav-link>   
 
                 <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}

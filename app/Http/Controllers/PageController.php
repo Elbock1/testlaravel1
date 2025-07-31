@@ -21,4 +21,9 @@ class PageController extends Controller
     {
         return view('contact');
     }
+
+    public function help()
+    {
+        return view('help');
+    }
 }

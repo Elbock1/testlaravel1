@@ -23,3 +23,268 @@ nav a:hover {
 main {
   padding: 2em;
 }
+/* style.css */
+
+.boutton {
+    text-align: center;
+    padding-top: 35px;
+   
+}
+
+.boutton button,
+.boutton a button {
+    width: 150px;
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+}
+.boutton button
+{
+  color: rgb(2, 8, 14);
+}
+
+.entete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.entete label {
+    font-weight: bold;
+}
+
+.entete input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 1.1em;
+    margin-top: 3px;
+}
+
+.entete p {
+    text-align: center;
+}
+
+/* style de la page index *************************************************************
+
+/* Styles du conteneur principal */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* En-tête statique avec le titre et le bouton "Créer" */
+.header-fixed {
+    display: flex; /* Utilise Flexbox pour aligner les éléments */
+    justify-content: space-between; /* Espace le titre et le bouton */
+    align-items: center; /* Centre verticalement */
+    padding: 15px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky; /* Rends l'élément statique/collant */
+    top: 0; /* Colle l'élément en haut de la fenêtre */
+    z-index: 1000; /* Assure qu'il reste au-dessus du contenu */
+    max-width: 1200px; /* Aligne avec le contenu principal */
+    margin: 0 auto; /* Centre l'en-tête lui-même */
+}
+
+/* Titre de la page */
+.page-title {
+    margin: 0;
+    color: #333;
+    font-size: 2em; /* Taille du titre */
+}
+
+/* Bouton "Créer un nouvel article" */
+.btn-create {
+    background-color: #007bff; /* Couleur verte */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: none; /* Pour le lien */
+    display: inline-block; /* Pour que le padding fonctionne bien */
+    transition: background-color 0.3s ease; /* Effet de transition */
+}
+
+.btn-create:hover {
+    background-color: #007bff; /* Couleur plus foncée au survol */
+}
+
+/* Messages de succès */
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-size: 1.0em;
+}
+
+/* Message "Aucun article" */
+.no-articles {
+    text-align: center;
+    padding: 30px;
+    font-size: 1.1em;
+    color: #666;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Conteneur d'un article individuel */
+.article-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease-in-out; /* Effet au survol */
+}
+
+.article-item:hover {
+    transform: translateY(-5px); /* Légère élévation au survol */
+}
+
+/* Titre de l'article */
+.article-item h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+/* Lien du titre de l'article */
+.article-item h2 a {
+    text-decoration: none;
+    color: #007bff; /* Couleur bleue */
+    transition: color 0.3s ease;
+}
+
+.article-item h2 a:hover {
+    color: #0056b3; /* Couleur plus foncée au survol */
+}
+
+/* Contenu de l'article */
+.article-item p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Date de publication */
+.article-item small {
+    color: #888;
+    font-size: 0.85em;
+}
+
+/* Conteneur des actions (Modifier/Supprimer) */
+.article-actions {
+    margin-top: 15px;
+    display: flex; /* Utilise Flexbox pour aligner les boutons */
+    gap: 10px; /* Espace entre les boutons */
+}
+
+/* Liens des actions */
+.article-actions a {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.article-actions a:hover {
+    background-color: #0056b3;
+}
+
+/* Bouton Supprimer */
+.article-actions form button {
+    background-color: #dc3545; /* Couleur rouge */
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.article-actions form button:hover {
+    background-color: #c82333; /* Couleur plus foncée au survol */
+}
+
+/* Ligne de séparation */
+.article-separator {
+    border: 0;
+    height: 1px;
+    background-color: #eee;
+    margin: 30px 0; /* Plus d'espace autour de la ligne */
+}
+
+/* Media Queries pour la responsivité */
+@media (max-width: 768px) {
+    .header-fixed {
+        flex-direction: column; /* Empile les éléments en colonne sur petits écrans */
+        text-align: center;
+        padding: 10px;
+    }
+
+    .page-title {
+        font-size: 1.8em;
+        margin-bottom: 10px; /* Espace entre le titre et le bouton */
+    }
+
+    .btn-create {
+        width: 100%; /* Le bouton prend toute la largeur */
+        margin-top: 10px;
+    }
+
+    .article-item {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .article-item h2 {
+        font-size: 1.5em;
+    }
+
+    .article-actions {
+        flex-direction: column; /* Empile les actions sur petits écrans */
+        gap: 8px;
+    }
+
+    .article-actions a,
+    .article-actions form button {
+        width: 100%; /* Les boutons d'action prennent toute la largeur */
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .page-title {
+        font-size: 1.5em;
+    }
+
+    .article-item h2 {
+        font-size: 1.3em;
+    }
+
+    .btn-create,
+    .article-actions a,
+    .article-actions form button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
